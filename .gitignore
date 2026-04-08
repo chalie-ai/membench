@@ -1,0 +1,7 @@
+.claude/
+CLAUDE.md
+results/
+__pycache__/
+*.pyc
+.DS_Store
+eval/step_1/seeds/bio_*.md
