@@ -1,0 +1,55 @@
+[
+  {
+    "id": 0,
+    "question": "What is Dante Kowalski-Nair's relationship to Gia Kowalski-Nair?",
+    "answer": "in-law",
+    "answer_type": "keywords",
+    "scoring": [
+      {"keywords": ["in-law"], "score": 1.0},
+      {"keywords": ["in", "law"], "score": 1.0},
+      {"keywords": ["married"], "score": 0.4}
+    ]
+  },
+  {
+    "id": 1,
+    "question": "Kira Lindqvist-Tanaka is the nephew of Emeka Lindqvist-Tanaka. What is Emeka's profession?",
+    "answer": "marine biologist",
+    "answer_type": "keywords",
+    "scoring": [
+      {"keywords": ["marine", "biologist"], "score": 1.0},
+      {"keywords": ["marine"], "score": 0.7},
+      {"keywords": ["biologist"], "score": 0.7}
+    ]
+  },
+  {
+    "id": 2,
+    "question": "Rosa Blackwood-Diallo is the niece of Juno Blackwood-Diallo. Juno is the in-law of Aaliya Blackwood-Diallo. What city does Aaliya live in?",
+    "answer": "Bergen, Norway",
+    "answer_type": "keywords",
+    "scoring": [
+      {"keywords": ["bergen", "norway"], "score": 1.0},
+      {"keywords": ["bergen"], "score": 0.7}
+    ]
+  },
+  {
+    "id": 3,
+    "question": "How many relatives does Olga Mahmoud-Reyes have mentioned in the dataset?",
+    "answer": "3",
+    "answer_type": "numeric",
+    "scoring": {
+      "3": 1.0,
+      "2": 0.4,
+      "4": 0.4
+    }
+  },
+  {
+    "id": 4,
+    "question": "What is the Vasquez-Okafor family motto?",
+    "answer": "We eat together or we don't eat at all",
+    "answer_type": "keywords",
+    "scoring": [
+      {"keywords": ["we", "eat", "together", "don't", "eat"], "score": 1.0},
+      {"keywords": ["eat", "together"], "score": 0.7}
+    ]
+  }
+]

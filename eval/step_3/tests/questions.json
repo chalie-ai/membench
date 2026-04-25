@@ -1,0 +1,138 @@
+[
+  {
+    "id": 0,
+    "question": "What is the single biggest risk facing projects overall?",
+    "answer": "teams lacking experience with their chosen technology stack",
+    "answer_type": "keywords",
+    "scoring": [
+      {"keywords": ["experience", "stack"], "score": 1.0},
+      {"keywords": ["no experience", "technology"], "score": 1.0},
+      {"keywords": ["inexperience"], "score": 0.7},
+      {"keywords": ["experience"], "score": 0.7},
+      {"keywords": ["unfamiliar", "stack"], "score": 0.7},
+      {"keywords": ["sponsor", "rotate"], "score": 0.4},
+      {"keywords": ["architect", "leaving"], "score": 0.4}
+    ]
+  },
+  {
+    "id": 1,
+    "question": "What is the most common reason projects get blocked?",
+    "answer": "third-party API rate limits",
+    "answer_type": "keywords",
+    "scoring": [
+      {"keywords": ["api", "rate", "limit"], "score": 1.0},
+      {"keywords": ["third-party", "api"], "score": 1.0},
+      {"keywords": ["rate limit"], "score": 0.7},
+      {"keywords": ["api"], "score": 0.7},
+      {"keywords": ["legal", "review"], "score": 0.4},
+      {"keywords": ["legal"], "score": 0.4}
+    ]
+  },
+  {
+    "id": 2,
+    "question": "What tech stack is most widely adopted across projects?",
+    "answer": "Python/Django, PostgreSQL, Redis, deployed on AWS ECS",
+    "answer_type": "keywords",
+    "scoring": [
+      {"keywords": ["python", "django"], "score": 1.0},
+      {"keywords": ["python"], "score": 0.7},
+      {"keywords": ["rust", "react"], "score": 0.4},
+      {"keywords": ["typescript", "next"], "score": 0.4}
+    ]
+  },
+  {
+    "id": 3,
+    "question": "Which company is running the most projects?",
+    "answer": "Coral Reef Solutions",
+    "answer_type": "keywords",
+    "scoring": [
+      {"keywords": ["coral", "reef"], "score": 1.0},
+      {"keywords": ["talus"], "score": 0.4},
+      {"keywords": ["stratos"], "score": 0.4}
+    ]
+  },
+  {
+    "id": 4,
+    "question": "What is the most prevalent form of technical debt across projects?",
+    "answer": "a God class handling authentication, logging, and email",
+    "answer_type": "keywords",
+    "scoring": [
+      {"keywords": ["god", "class"], "score": 1.0},
+      {"keywords": ["god"], "score": 0.7},
+      {"keywords": ["3000", "line"], "score": 0.7},
+      {"keywords": ["3,000"], "score": 0.7},
+      {"keywords": ["orm", "raw", "sql"], "score": 0.4}
+    ]
+  },
+  {
+    "id": 5,
+    "question": "Are most projects well-funded or resource-constrained?",
+    "answer": "roughly even split between well-funded and resource-constrained",
+    "answer_type": "keywords",
+    "scoring": [
+      {"keywords": ["split"], "score": 1.0},
+      {"keywords": ["even"], "score": 1.0},
+      {"keywords": ["mix"], "score": 1.0},
+      {"keywords": ["both"], "score": 1.0},
+      {"keywords": ["varies"], "score": 0.7},
+      {"keywords": ["range"], "score": 0.7},
+      {"keywords": ["constrained"], "score": 0.4},
+      {"keywords": ["underfunded"], "score": 0.4},
+      {"keywords": ["well-funded"], "score": 0.4},
+      {"keywords": ["well funded"], "score": 0.4}
+    ]
+  },
+  {
+    "id": 6,
+    "question": "What is the most common team management style across projects?",
+    "answer": "formal — everything goes through JIRA and weekly status meetings",
+    "answer_type": "keywords",
+    "scoring": [
+      {"keywords": ["formal", "jira"], "score": 1.0},
+      {"keywords": ["formal", "status meeting"], "score": 1.0},
+      {"keywords": ["jira"], "score": 0.7},
+      {"keywords": ["formal"], "score": 0.7},
+      {"keywords": ["veteran"], "score": 0.4}
+    ]
+  },
+  {
+    "id": 7,
+    "question": "What industries are these projects primarily serving?",
+    "answer": "renewable energy and education",
+    "answer_type": "keywords",
+    "scoring": [
+      {"keywords": ["renewable", "energy", "education"], "score": 1.0},
+      {"keywords": ["renewable", "education"], "score": 1.0},
+      {"keywords": ["renewable", "energy"], "score": 0.7},
+      {"keywords": ["education"], "score": 0.7},
+      {"keywords": ["real estate"], "score": 0.4}
+    ]
+  },
+  {
+    "id": 8,
+    "question": "What type of project is being built most often?",
+    "answer": "API gateway and microservices migration",
+    "answer_type": "keywords",
+    "scoring": [
+      {"keywords": ["api", "gateway"], "score": 1.0},
+      {"keywords": ["microservices", "migration"], "score": 1.0},
+      {"keywords": ["e-commerce"], "score": 1.0},
+      {"keywords": ["ecommerce"], "score": 1.0},
+      {"keywords": ["microservices"], "score": 0.7},
+      {"keywords": ["healthcare"], "score": 0.4}
+    ]
+  },
+  {
+    "id": 9,
+    "question": "What are the most common security standards projects must meet?",
+    "answer": "internal security audit only",
+    "answer_type": "keywords",
+    "scoring": [
+      {"keywords": ["internal", "audit"], "score": 1.0},
+      {"keywords": ["fedramp"], "score": 0.7},
+      {"keywords": ["iso", "27001"], "score": 0.7},
+      {"keywords": ["pci"], "score": 0.4},
+      {"keywords": ["soc"], "score": 0.4}
+    ]
+  }
+]

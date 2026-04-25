@@ -1,311 +1,111 @@
 [
   {
     "id": 0,
-    "question": "How many people currently live in Chattanooga, Tennessee?",
-    "answer": "14",
-    "scoring": {
-      "14": 1.0,
-      "13": 0.7,
-      "15": 0.7,
-      "12": 0.4,
-      "11": 0.4,
-      "16": 0.4,
-      "17": 0.4
-    }
+    "question": "What is Nadira Kowalski-Nair's greatest fear?",
+    "answer": "dogs — bitten badly as a child",
+    "answer_type": "keywords",
+    "scoring": [
+      {"keywords": ["dogs", "bitten"], "score": 1.0},
+      {"keywords": ["dogs"], "score": 0.7}
+    ]
   },
   {
     "id": 1,
-    "question": "How many people were born and raised in rural Appalachia, USA?",
-    "answer": "5",
-    "scoring": {
-      "5": 1.0,
-      "4": 0.7,
-      "6": 0.7,
-      "3": 0.4,
-      "7": 0.4
-    }
+    "question": "What is Tariq Kowalski-Nair's religion?",
+    "answer": "Quaker — attends meeting for worship, values silence and service",
+    "answer_type": "keywords",
+    "scoring": [
+      {"keywords": ["quaker"], "score": 1.0}
+    ]
   },
   {
     "id": 2,
-    "question": "How many people work as a pastry chef?",
-    "answer": "8",
-    "scoring": {
-      "8": 1.0,
-      "7": 0.7,
-      "9": 0.7,
-      "6": 0.4,
-      "10": 0.4
-    }
+    "question": "What is Zola Lindqvist-Tanaka's favorite color?",
+    "answer": "slate blue",
+    "answer_type": "keywords",
+    "scoring": [
+      {"keywords": ["slate", "blue"], "score": 1.0},
+      {"keywords": ["slate"], "score": 0.7}
+    ]
   },
   {
     "id": 3,
-    "question": "How many people are 61 years old?",
-    "answer": "13",
-    "scoring": {
-      "13": 1.0,
-      "12": 0.7,
-      "14": 0.7,
-      "10": 0.4,
-      "11": 0.4,
-      "15": 0.4,
-      "16": 0.4
-    }
+    "question": "What is Gemma Lindqvist-Tanaka's current city of residence?",
+    "answer": "Lisbon, Portugal",
+    "answer_type": "keywords",
+    "scoring": [
+      {"keywords": ["lisbon"], "score": 1.0}
+    ]
   },
   {
     "id": 4,
-    "question": "How many people have dusty rose as their favorite color?",
-    "answer": "25",
-    "scoring": {
-      "25": 1.0,
-      "24": 0.7,
-      "26": 0.7,
-      "23": 0.4,
-      "22": 0.4,
-      "27": 0.4,
-      "28": 0.4
-    }
+    "question": "What is Luna Mahmoud-Reyes's medical condition?",
+    "answer": "PTSD from a violent mugging, in EMDR therapy",
+    "answer_type": "keywords",
+    "scoring": [
+      {"keywords": ["ptsd", "mugging", "emdr"], "score": 1.0},
+      {"keywords": ["ptsd", "mugging"], "score": 0.7},
+      {"keywords": ["ptsd"], "score": 0.4}
+    ]
   },
   {
     "id": 5,
-    "question": "How many people are described as: no strong preference, adapts to schedule?",
-    "answer": "109",
-    "scoring": {
-      "109": 1.0,
-      "108": 0.7,
-      "110": 0.7,
-      "107": 0.7,
-      "111": 0.7,
-      "106": 0.7,
-      "112": 0.7,
-      "105": 0.7,
-      "113": 0.7,
-      "104": 0.4,
-      "114": 0.4,
-      "103": 0.4,
-      "115": 0.4,
-      "102": 0.4,
-      "116": 0.4,
-      "101": 0.4,
-      "117": 0.4,
-      "100": 0.4,
-      "118": 0.4,
-      "99": 0.4,
-      "119": 0.4,
-      "98": 0.4,
-      "120": 0.4
-    }
+    "question": "What is Ingrid Vasquez-Okafor's vehicle?",
+    "answer": "inherited a classic car from a relative, keeps it garaged",
+    "answer_type": "keywords",
+    "scoring": [
+      {"keywords": ["inherited", "classic", "car"], "score": 1.0},
+      {"keywords": ["classic", "car"], "score": 0.7},
+      {"keywords": ["inherited"], "score": 0.4}
+    ]
   },
   {
     "id": 6,
-    "question": "How many people have \"writing unpublished crime fiction\" as their primary hobby?",
-    "answer": "25",
-    "scoring": {
-      "25": 1.0,
-      "24": 0.7,
-      "26": 0.7,
-      "23": 0.4,
-      "22": 0.4,
-      "27": 0.4,
-      "28": 0.4
-    }
+    "question": "What is Devika Mahmoud-Reyes's favorite cuisine?",
+    "answer": "Korean BBQ",
+    "answer_type": "keywords",
+    "scoring": [
+      {"keywords": ["korean", "bbq"], "score": 1.0},
+      {"keywords": ["korean"], "score": 0.7}
+    ]
   },
   {
     "id": 7,
-    "question": "How many people identify as: Hindu by upbringing, practice has become personal and informal?",
-    "answer": "31",
+    "question": "How many people work as a marine biologist?",
+    "answer": "6",
+    "answer_type": "numeric",
     "scoring": {
-      "31": 1.0,
-      "30": 0.7,
-      "32": 0.7,
-      "29": 0.7,
-      "33": 0.7,
-      "28": 0.4,
-      "27": 0.4,
-      "26": 0.4,
-      "34": 0.4,
-      "35": 0.4,
-      "36": 0.4
+      "6": 1.0,
+      "5": 0.7,
+      "7": 0.7,
+      "4": 0.4,
+      "8": 0.4
     }
   },
   {
     "id": 8,
-    "question": "How many people have \"a turtle won at a county fair 8 years ago\" as their pet situation?",
-    "answer": "42",
+    "question": "How many people have forest green as their favorite color?",
+    "answer": "6",
+    "answer_type": "numeric",
     "scoring": {
-      "42": 1.0,
-      "41": 0.7,
-      "43": 0.7,
-      "40": 0.7,
-      "44": 0.7,
-      "39": 0.4,
-      "38": 0.4,
-      "37": 0.4,
-      "36": 0.4,
-      "45": 0.4,
-      "46": 0.4,
-      "47": 0.4,
-      "48": 0.4
+      "6": 1.0,
+      "5": 0.7,
+      "7": 0.7,
+      "4": 0.4,
+      "8": 0.4
     }
   },
   {
     "id": 9,
-    "question": "How many people currently live in Perth, Australia?",
-    "answer": "12",
+    "question": "How many people currently live in Portland, Oregon?",
+    "answer": "3",
+    "answer_type": "numeric",
     "scoring": {
-      "12": 1.0,
-      "11": 0.7,
-      "13": 0.7,
-      "10": 0.4,
-      "9": 0.4,
-      "14": 0.4,
-      "15": 0.4
-    }
-  },
-  {
-    "id": 10,
-    "question": "What is the most common profession in the dataset?",
-    "answer": "deep sea diver",
-    "answer_type": "keywords",
-    "scoring": [
-      {"keywords": ["deep", "sea", "diver"], "score": 1.0},
-      {"keywords": ["prison", "chaplain"], "score": 1.0},
-      {"keywords": ["building", "inspector"], "score": 0.7},
-      {"keywords": ["sign", "language", "interpreter"], "score": 0.7}
-    ]
-  },
-  {
-    "id": 11,
-    "question": "What is the most common current city of residence?",
-    "answer": "Seattle, Washington",
-    "answer_type": "keywords",
-    "scoring": [
-      {"keywords": ["seattle", "washington"], "score": 1.0},
-      {"keywords": ["seattle"], "score": 1.0},
-      {"keywords": ["dublin", "ireland"], "score": 1.0},
-      {"keywords": ["dublin"], "score": 1.0},
-      {"keywords": ["richmond"], "score": 0.4},
-      {"keywords": ["minneapolis"], "score": 0.4}
-    ]
-  },
-  {
-    "id": 12,
-    "question": "What is the most popular favorite color?",
-    "answer": "cobalt",
-    "answer_type": "keywords",
-    "scoring": [
-      {"keywords": ["cobalt"], "score": 1.0},
-      {"keywords": ["charcoal"], "score": 0.7},
-      {"keywords": ["navy"], "score": 0.7},
-      {"keywords": ["purple"], "score": 0.7}
-    ]
-  },
-  {
-    "id": 13,
-    "question": "What is the most common birthplace?",
-    "answer": "Tbilisi, Georgia",
-    "answer_type": "keywords",
-    "scoring": [
-      {"keywords": ["tbilisi", "georgia"], "score": 1.0},
-      {"keywords": ["tbilisi"], "score": 1.0},
-      {"keywords": ["berlin", "germany"], "score": 0.7},
-      {"keywords": ["berlin"], "score": 0.7}
-    ]
-  },
-  {
-    "id": 14,
-    "question": "What is the least common pet situation?",
-    "answer": "a 14-year-old beagle mix, mostly deaf now",
-    "answer_type": "keywords",
-    "scoring": [
-      {"keywords": ["beagle", "deaf"], "score": 1.0},
-      {"keywords": ["beagle", "14"], "score": 1.0},
-      {"keywords": ["beagle"], "score": 0.7},
-      {"keywords": ["golden", "retriever", "copper"], "score": 0.4}
-    ]
-  },
-  {
-    "id": 15,
-    "question": "What is the most common age in the dataset?",
-    "answer": "37",
-    "scoring": {
-      "37": 1.0,
-      "31": 0.7,
-      "62": 0.7,
-      "76": 0.7
-    }
-  },
-  {
-    "id": 16,
-    "question": "How many distinct professions are there among people living in Seattle, Washington?",
-    "answer": "16",
-    "scoring": {
-      "16": 1.0,
-      "15": 0.7,
-      "17": 0.7,
-      "14": 0.4,
-      "13": 0.4,
-      "18": 0.4,
-      "19": 0.4
-    }
-  },
-  {
-    "id": 17,
-    "question": "How many people work as a deep sea diver and live in Seattle, Washington?",
-    "answer": "0",
-    "scoring": {
-      "0": 1.0,
+      "3": 1.0,
+      "2": 0.7,
+      "4": 0.7,
       "1": 0.4,
-      "none": 1.0
-    }
-  },
-  {
-    "id": 18,
-    "question": "How many distinct birthplaces are represented in the dataset?",
-    "answer": "60",
-    "scoring": {
-      "60": 1.0,
-      "59": 0.7,
-      "61": 0.7,
-      "58": 0.7,
-      "62": 0.7,
-      "57": 0.4,
-      "56": 0.4,
-      "55": 0.4,
-      "63": 0.4,
-      "64": 0.4,
-      "65": 0.4
-    }
-  },
-  {
-    "id": 19,
-    "question": "How many people in the dataset are over 50 years old?",
-    "answer": "222",
-    "scoring": {
-      "222": 1.0,
-      "221": 0.7,
-      "223": 0.7,
-      "220": 0.7,
-      "224": 0.7,
-      "219": 0.7,
-      "225": 0.7,
-      "218": 0.7,
-      "226": 0.7,
-      "217": 0.7,
-      "227": 0.7,
-      "210": 0.4,
-      "211": 0.4,
-      "212": 0.4,
-      "213": 0.4,
-      "214": 0.4,
-      "215": 0.4,
-      "216": 0.4,
-      "228": 0.4,
-      "229": 0.4,
-      "230": 0.4,
-      "231": 0.4,
-      "232": 0.4,
-      "233": 0.4,
-      "234": 0.4
+      "5": 0.4
     }
   }
 ]

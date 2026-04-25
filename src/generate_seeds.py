@@ -2,14 +2,18 @@
 """
 generate_seeds.py
 
-Reads seed_gen.json, constructs a prompt per variant, sends it to Ollama,
-and stores the generated biography as eval/step_1/seeds/bio_{id}.md.
+Reads eval/step_1/seed_data.json (built by build_seeds.py), renders prompts,
+sends them to Ollama, and saves the generated content.
+
+Output files:
+  eval/step_1/seeds/bio_{id}.md       — 150 biographies
+  eval/step_1/seeds/project_{id}.md   — 300 project specs
+  eval/step_1/seeds/article_{id}.md   — 25 articles
 
 Usage:
   python src/generate_seeds.py --host localhost:11434 --model llama3
-
-  # Process a specific range of IDs
-  python src/generate_seeds.py --host localhost:11434 --model llama3 --start 0 --end 10
+  python src/generate_seeds.py --host localhost:11434 --model llama3 --type bio --start 0 --end 10
+  python src/generate_seeds.py --host localhost:11434 --model llama3 --type article
 """
 
 import argparse
@@ -21,20 +25,22 @@ from pathlib import Path
 import requests
 
 ROOT = Path(__file__).parent.parent
-SEED_GEN_JSON = ROOT / "eval" / "step_1" / "seed_gen.json"
+SEED_DATA = ROOT / "eval" / "step_1" / "seed_data.json"
 SEEDS_DIR = ROOT / "eval" / "step_1" / "seeds"
 
 
-def load_seed_gen() -> dict:
-    with open(SEED_GEN_JSON) as f:
+def load_seed_data() -> dict:
+    with open(SEED_DATA) as f:
         return json.load(f)
 
 
-def build_prompt(template: str, variant: dict) -> str:
-    return template.format(**{k: v for k, v in variant.items() if k != "id"})
+def render_prompt(template: str, variant: dict) -> str:
+    """Replace {placeholders} with variant values. Skip non-string fields."""
+    fields = {k: v for k, v in variant.items() if k not in ("id", "type", "family", "linked_bio_ids") and isinstance(v, str)}
+    return template.format(**fields)
 
 
-def call_ollama(host: str, model: str, prompt: str, timeout: int = 300) -> str:
+def call_ollama(host: str, model: str, prompt: str, timeout: int = 600) -> str:
     url = f"http://{host}/api/generate"
     payload = {"model": model, "prompt": prompt, "stream": False}
     response = requests.post(url, json=payload, timeout=timeout)
@@ -42,52 +48,73 @@ def call_ollama(host: str, model: str, prompt: str, timeout: int = 300) -> str:
     return response.json()["response"]
 
 
-def main():
-    parser = argparse.ArgumentParser(description="Generate membench biography seeds via Ollama")
-    parser.add_argument("--host", required=True, help="Ollama host:port (e.g. localhost:11434)")
-    parser.add_argument("--model", required=True, help="Ollama model name (e.g. llama3)")
-    parser.add_argument("--start", type=int, default=None, help="First variant ID to process (inclusive)")
-    parser.add_argument("--end", type=int, default=None, help="Last variant ID to process (exclusive)")
-    parser.add_argument("--timeout", type=int, default=300, help="Ollama request timeout in seconds (default: 300)")
-    args = parser.parse_args()
-
-    SEEDS_DIR.mkdir(parents=True, exist_ok=True)
-
-    data = load_seed_gen()
-    template = data["prompt_template"]
-    variants = data["variants"]
-
-    if args.start is not None or args.end is not None:
-        start = args.start or 0
-        end = args.end if args.end is not None else len(variants)
-        variants = [v for v in variants if start <= v["id"] < end]
-
-    print(f"Generating {len(variants)} biography/biographies via {args.host} ({args.model})...")
-
+def process_variants(host, model, template, variants, prefix, timeout):
+    """Send each variant to Ollama and save the result."""
+    total = len(variants)
     errors = []
-    for variant in variants:
-        vid = variant["id"]
-        bio_path = SEEDS_DIR / f"bio_{vid}.md"
 
-        if bio_path.exists():
-            print(f"  [{vid:>4}] bio_{vid}.md already exists, skipping")
+    for i, variant in enumerate(variants):
+        vid = variant["id"]
+        out_path = SEEDS_DIR / f"{prefix}_{vid}.md"
+
+        if out_path.exists():
+            print(f"  [{i+1:>4}/{total}] {prefix}_{vid}.md exists, skipping")
             continue
 
-        prompt = build_prompt(template, variant)
+        prompt = render_prompt(template, variant)
 
         try:
-            biography = call_ollama(args.host, args.model, prompt, timeout=args.timeout)
-            bio_path.write_text(biography, encoding="utf-8")
-            print(f"  [{vid:>4}] wrote bio_{vid}.md")
+            result = call_ollama(host, model, prompt, timeout=timeout)
+            out_path.write_text(result, encoding="utf-8")
+            print(f"  [{i+1:>4}/{total}] wrote {prefix}_{vid}.md")
         except requests.exceptions.RequestException as e:
-            print(f"  [{vid:>4}] ERROR: {e}")
+            print(f"  [{i+1:>4}/{total}] ERROR: {e}")
             errors.append((vid, str(e)))
             time.sleep(1)
 
-    if errors:
-        print(f"\n{len(errors)} error(s):")
-        for vid, msg in errors:
-            print(f"  variant {vid}: {msg}")
+    return errors
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Generate membench seed content via Ollama")
+    parser.add_argument("--host", required=True, help="Ollama host:port")
+    parser.add_argument("--model", required=True, help="Ollama model name")
+    parser.add_argument("--type", choices=["bio", "project", "article", "all"], default="all",
+                        help="Which seed type to generate (default: all)")
+    parser.add_argument("--start", type=int, default=None, help="First ID (inclusive)")
+    parser.add_argument("--end", type=int, default=None, help="Last ID (exclusive)")
+    parser.add_argument("--timeout", type=int, default=900, help="Ollama timeout per request (default: 900)")
+    args = parser.parse_args()
+
+    SEEDS_DIR.mkdir(parents=True, exist_ok=True)
+    data = load_seed_data()
+
+    def filter_range(variants):
+        if args.start is not None or args.end is not None:
+            s = args.start or 0
+            e = args.end if args.end is not None else len(variants)
+            return [v for v in variants if s <= v["id"] < e]
+        return variants
+
+    all_errors = []
+
+    if args.type in ("bio", "all"):
+        bios = filter_range(data["biographies"])
+        print(f"\nGenerating {len(bios)} biographies...")
+        all_errors += process_variants(args.host, args.model, data["bio_template"], bios, "bio", args.timeout)
+
+    if args.type in ("project", "all"):
+        projects = filter_range(data["project_specs"])
+        print(f"\nGenerating {len(projects)} project specs...")
+        all_errors += process_variants(args.host, args.model, data["project_template"], projects, "project", args.timeout)
+
+    if args.type in ("article", "all"):
+        articles = filter_range(data["articles"])
+        print(f"\nGenerating {len(articles)} articles...")
+        all_errors += process_variants(args.host, args.model, data["article_template"], articles, "article", args.timeout)
+
+    if all_errors:
+        print(f"\n{len(all_errors)} total error(s)")
         sys.exit(1)
     else:
         print("\nDone.")
