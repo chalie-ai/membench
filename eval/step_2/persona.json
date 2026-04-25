@@ -1,0 +1,243 @@
+{
+  "schema_version": 1,
+  "schema_basis": "LongMemEval 5-bucket attribute ontology + augmentations (current_projects, recent_pains, communication_style)",
+  "temporal_anchor": {
+    "now_month": 18,
+    "arc_span_months": 18,
+    "now_label": "current point at end of arc",
+    "calendar_now": "late October 2026"
+  },
+
+  "demographic": {
+    "full_name": "Sebastián Río Castellanos",
+    "preferred_name": "Seb",
+    "age_at_arc_start": 32,
+    "age_at_arc_end": 33,
+    "birthday": "June 4 (turns 33 around month 8)",
+    "pronouns": "he/him",
+    "gender": "cis male",
+    "nationality": "Mexican",
+    "ethnicity": "Mexican (paternal Veracruz, maternal Jalisco-Spanish)",
+    "location_current": "Mexico City — Roma Norte neighborhood",
+    "location_origin": "Guadalajara, Jalisco",
+    "moved_to_cdmx": "2 years before arc start",
+    "languages": ["Spanish (native)", "English (fluent)", "Portuguese (B1, learning for Camila's family)"],
+    "education": [
+      {"institution": "ITESM Guadalajara (Tec de Monterrey)", "degree": "BSc Computer Science", "graduated": 2014},
+      {"institution": "Coursera/edX self-study", "topic": "Distributed systems, ML basics"}
+    ],
+    "occupation": "Senior Backend Engineer",
+    "employer": "Brújula Logistics (Series B last-mile delivery startup, ~120 employees, HQ Mexico City)",
+    "team": "Logistics Platform team (6 backend engineers)",
+    "manager_start": "Daniela Otero (eng manager, leaves company month 8)",
+    "manager_end": "Roberto Sánchez (replaces Daniela month 8, more political)",
+    "salary": "approx 95k USD equivalent (1.7M MXN/yr)"
+  },
+
+  "lifestyle": {
+    "diet": "vegetarian for 4 years (decision triggered by watching dad's cardiac surgery)",
+    "diet_quirks": ["addicted to ramen at 'Nudo' on Av. Álvaro Obregón", "can't stand cilantro — soap gene", "homemade hot sauce obsession"],
+    "exercise": {
+      "primary": "Kickboxing at Atlas Box CDMX (Colonia Juárez)",
+      "frequency": "3x per week — Mon/Wed/Fri evenings",
+      "rank_at_arc_start": "blue belt",
+      "rank_progression": [
+        {"month": 8, "rank": "brown belt"},
+        {"month": 15, "rank": "black belt — first dan"}
+      ],
+      "secondary": "yoga on Sundays at Camila's insistence (resentful)",
+      "instructor": "Coach Esteban 'Profe' Domínguez (61, ex-pro kickboxer from Tijuana)"
+    },
+    "sleep": "night owl, sleeps 1am-9am ideally; insomnia worsens over arc, hits peak month 16-17",
+    "substances": "no smoking, drinks mezcal/wine moderately (1-2x per week), 4-6 cups of yerba mate daily",
+    "religion": "lapsed Catholic, secular but lights candles for dead grandmother on her birthday",
+    "hobbies": [
+      "vinyl collecting (Latin jazz, ~150 records, Beny Moré obsession)",
+      "reading (currently Ted Chiang's Exhalation, before that Borges)",
+      "woodworking (took up month 14 for chess board project)",
+      "F1 (long-suffering Sergio Pérez fan)",
+      "homemade hot sauce experiments"
+    ],
+    "tech_relationship": "early adopter for productivity tools, late adopter for social media; hates Twitter/X, posts on Mastodon occasionally",
+    "communication_quirks": ["uses 'órale' and 'no manches' under stress", "drops Spanish into English when tired", "writes long when frustrated, short when excited"]
+  },
+
+  "situational_context": {
+    "housing": "rents 2BR apartment in Roma Norte with Camila, 5th floor walk-up, rent went from 28k MXN to 33k MXN month 9 (18% increase shock)",
+    "neighborhood_quirks": ["upstairs neighbor 'Doña Marta' bakes bread at 5am", "cantina 'La Polar' below — noise on Friday nights", "favorite café 'Cardinal' for working remote"],
+    "transport": "2018 Honda CR-V (nicknamed 'La Torta'), bicycle for short trips, metro line 1 for work",
+    "finances": "makes 95k USD eq, saves 20% in CETES + USD index, has ~45k USD saved, 8k USD remaining on student loan from ITESM, no other debt",
+    "current_relationship": "5 years with Camila Ferreira (Argentinean-Brazilian architect at Foster + Partners CDMX office, age 30)",
+    "relationship_status_arc": "stable but stressed by mother-in-law's death at arc start; rough patch month 7-8 over kid timing",
+    "pet": "Australian Cattle Dog 'Nube' (blue heeler, female, born Feb 2024, adopted month 6 of arc from rescue 'Hocicos Felices')",
+    "current_living_arrangements": "Seb + Camila + Nube; Camila's father Hugo (62, retired widower) visits monthly from São Paulo since wife's death",
+    "professional_situation_changes": [
+      "month 2: promoted Mid → Senior",
+      "month 6: takes tech lead role on RouteOpt rust migration",
+      "month 8: manager change (Daniela → Roberto)",
+      "month 12: turns down internal transfer to Brújula's Bogotá office",
+      "month 17: starts MIT Media Lab masters application"
+    ]
+  },
+
+  "life_events": {
+    "stable_past": [
+      "graduated ITESM 2014",
+      "first job: backend at Kueski (fintech) 2014-2017",
+      "second job: Wizeline 2017-2021 (consulting on USA banking projects)",
+      "joined Brújula Logistics late 2023",
+      "moved Guadalajara → CDMX 2 years before arc",
+      "father had triple bypass surgery 2022 (catalyst for vegetarianism)",
+      "abuela materna 'Mama Lupita' died 2019 (still mourns, lights candles)",
+      "met Camila at friend's wedding in Oaxaca, late 2021"
+    ],
+    "arc_events_chronological": [
+      {"month": 0, "event": "Mother-in-law Beatriz Ferreira dies of pancreatic cancer in São Paulo. Seb + Camila fly out for funeral."},
+      {"month": 1, "event": "Return to CDMX. Numb period. Camila on bereavement leave."},
+      {"month": 2, "event": "Seb promoted to Senior. Salary bump 18%. Awkward bc Camila grieving."},
+      {"month": 3, "event": "Buys Lelit Mara X espresso machine — guilt purchase post-promo."},
+      {"month": 4, "event": "Starts pose-estimation kickboxing form analyzer side project. TensorFlow then pivots to MediaPipe."},
+      {"month": 5, "event": "Postgres meltdown in prod — 4-hour outage, post-mortem."},
+      {"month": 6, "event": "Adopts Nube (dog) from rescue. Same week kicks off RouteOpt rust migration as tech lead."},
+      {"month": 7, "event": "Rough patch with Camila over kid-timing conversation. Couples therapy starts (3 sessions)."},
+      {"month": 8, "event": "Brown belt earned at Atlas Box. Manager Daniela leaves; Roberto Sánchez replaces her. Seb's birthday — turns 33."},
+      {"month": 9, "event": "Rent increase from landlord — 28k→33k MXN. Argument with landlord about hot water."},
+      {"month": 10, "event": "Mom Isabela calls re: lump on neck. CT scan scheduled. Seb flies to Guadalajara. Lower back tweak from sparring same week."},
+      {"month": 11, "event": "Mom's lump benign — lipoma. Pause pose-estimation side project. Buys vinyl: 'Beny Moré con la Banda Gigante'."},
+      {"month": 12, "event": "Camila wins Pritzker Prize student-mentor nomination via her firm. Industry buzz. Seb declines Bogotá transfer."},
+      {"month": 13, "event": "Brother Mateo announces engagement to Sofía Aguirre. Trip planned to Tijuana. Nube terrified by month-13 thunderstorms."},
+      {"month": 14, "event": "Starts cedar chess board project for Camila's dad Hugo's 70th. First woodworking — buys Festool plunge router. Wood from 'Maderería El Roble' in Toluca."},
+      {"month": 15, "event": "Black belt — first dan — earned at Atlas Box. Profe Esteban hands belt personally. Pablo records on phone. Family flies in."},
+      {"month": 16, "event": "RouteOpt ships to staging. Performance: Python 340ms p95 → Rust 38ms p95. Insomnia hits worst point. Chess board has warped piece — re-plane needed."},
+      {"month": 17, "event": "Chess board complete, gifted at Hugo's 70th party in CDMX. Hugo cries. MIT Media Lab masters app drafted."},
+      {"month": 18, "event": "MIT app submitted (today). Recommendation letters from Daniela (former mgr) + ITESM thesis advisor. Currently waiting. Considering future of career."}
+    ],
+    "biggest_fears": ["dying like mother-in-law (sudden cancer)", "Camila moving back to São Paulo for family", "becoming his father (workaholic + closed off emotionally)"],
+    "proudest_moments": ["RouteOpt rust shipping to staging (month 16)", "black belt (month 15)", "chess board reaction from Hugo (month 17)"],
+    "biggest_regrets": ["didn't visit abuela Lupita in her last year before 2019 death", "took job at Wizeline for the money in 2017"]
+  },
+
+  "belongings": {
+    "everyday": [
+      "MacBook Pro M2 16in (work-issued)",
+      "ThinkPad T480 running NixOS (personal — for side projects)",
+      "iPhone 15 Pro (resentful about it, was Pixel before)",
+      "Garmin Forerunner 265 (running watch)",
+      "battered black Atlas Box gym bag with brown-belt patch (then black-belt patch month 15)"
+    ],
+    "vehicle": "2018 Honda CR-V silver — nicknamed 'La Torta' — 87k km, brake pads need changing month 11",
+    "prized_possession": "yerba mate bombilla cup, gift from abuela materna Mama Lupita (2017), engraved 'Seb' on the rim — nearly lost it month 4 in a taxi, recovered",
+    "vinyl_collection": "~150 records, Latin jazz heavy. Top-shelf: Astor Piazzolla 'Libertango', Beny Moré 'con la Banda Gigante', Caetano Veloso 'Transa'",
+    "tools_woodworking": "Festool plunge router (TS 55 REQ), set of Veritas chisels, cedar planks from Maderería El Roble (Toluca)",
+    "kitchen": "Lelit Mara X espresso machine (acquired month 3), Made-In carbon steel skillet, family-recipe molcajete inherited from abuela",
+    "gym_gear": ["Fairtex shin guards (red)", "Twins Special gloves 14oz", "boil-and-bite mouthguard"],
+    "instruments": "Yamaha FG800 acoustic guitar (rarely plays), harmonica he can't really play"
+  },
+
+  "current_projects": [
+    {
+      "id": "routeopt_rust",
+      "name": "RouteOpt rust migration",
+      "kind": "work — primary",
+      "started_month": 6,
+      "ended_month": null,
+      "current_state_at_arc_end": "shipped to staging month 16, prod rollout pending",
+      "stack": "Rust + Axum + Tokio + sqlx (PostGIS extension) + Redis",
+      "blockers_history": [
+        {"months": "6-7", "blocker": "tokio-postgres doesn't natively handle PostGIS geography type — wrote custom encoder"},
+        {"months": "10-11", "blocker": "memory regression — Tokio task spawning per request leaked"},
+        {"months": "14-15", "blocker": "load test reveals Tokio runtime starvation under burst load — bumped to multi-thread runtime"}
+      ],
+      "metrics_milestone": "Python 340ms p95 → Rust 38ms p95 (month 16)",
+      "team": ["Seb (tech lead)", "Andrés Ruiz (junior, joined month 9)", "Carla Vela (senior, on parental leave months 11-15)"]
+    },
+    {
+      "id": "kickbox_pose",
+      "name": "Kickboxing form analyzer (side project)",
+      "kind": "side",
+      "started_month": 4,
+      "ended_month": 11,
+      "current_state_at_arc_end": "paused — code on GitHub private, may revive",
+      "stack": "MediaPipe Pose + Python + Streamlit + ffmpeg",
+      "purpose": "auto-feedback on stance, hip rotation, kick chamber from phone video",
+      "blockers_history": [
+        {"months": "4-5", "blocker": "TensorFlow pose estimation too slow on CPU; pivoted to MediaPipe"},
+        {"months": "9-10", "blocker": "video alignment between cameras inconsistent; abandoned multi-cam"}
+      ],
+      "users_tested": "Pablo + 3 gym friends, ~12 sparring sessions logged"
+    },
+    {
+      "id": "chess_board",
+      "name": "Cedar chess board for Hugo's 70th",
+      "kind": "side — woodworking",
+      "started_month": 14,
+      "ended_month": 17,
+      "current_state_at_arc_end": "complete, gifted month 17",
+      "specs": "20-inch cedar board, walnut squares, magnetic chess pieces (3D printed bases), beeswax finish",
+      "blockers_history": [
+        {"month": 14, "blocker": "wrong wood grain orientation — re-planned"},
+        {"month": 16, "blocker": "warping in one corner from humidity — re-glued and clamped"}
+      ],
+      "cost": "~3500 MXN materials"
+    },
+    {
+      "id": "mit_app",
+      "name": "MIT Media Lab masters application — Affective Computing group",
+      "kind": "aspirational",
+      "started_month": 17,
+      "ended_month": 18,
+      "current_state_at_arc_end": "submitted month 18 — awaiting decision",
+      "advisor_target": "Rosalind Picard (long shot)",
+      "rec_letters": ["Daniela Otero (former mgr at Brújula)", "Dr. Patricia Lozano (ITESM thesis advisor)", "Pablo Mendoza (peer — wildcard)"],
+      "personal_statement_theme": "ML for nonverbal feedback in physical training",
+      "blockers_history": [
+        {"month": 17, "blocker": "GRE waiver request — got it"},
+        {"month": 18, "blocker": "personal statement rewrites — 7 drafts"}
+      ]
+    }
+  ],
+
+  "recent_pains": [
+    {"id": "pg_outage", "label": "postgres prod outage scarring", "months_active": "5-7", "severity": "high"},
+    {"id": "back_pain", "label": "lower back pain from kickboxing", "months_active": "10-18", "severity": "medium-high", "treatment": "physical therapy at Clínica Querétaro starting month 11, partially helps"},
+    {"id": "insomnia", "label": "insomnia worsening", "months_active": "14-18", "severity": "medium → high", "remedies_tried": ["melatonin (some help)", "CBT-I app (didn't stick)", "no-screens-after-10 rule (broken constantly)"]},
+    {"id": "rent_shock", "label": "Roma Norte rent increase 18%", "months_active": "9-18", "severity": "medium"},
+    {"id": "manager_change", "label": "new manager Roberto Sánchez — political vibes", "months_active": "8-18", "severity": "medium"},
+    {"id": "nube_thunder", "label": "dog Nube panic attacks during thunderstorms", "months_active": "13-18", "severity": "low-medium", "remedies_tried": ["thunder shirt (mild)", "vet-prescribed trazodone for storms"]},
+    {"id": "kid_timing", "label": "kid-timing conversation with Camila — recurring tension", "months_active": "7-18", "severity": "medium"},
+    {"id": "mit_anxiety", "label": "MIT app rejection anxiety", "months_active": "17-18", "severity": "medium"},
+    {"id": "father_health", "label": "dad Hugo's mild heart issues — angina occasional", "months_active": "ongoing", "severity": "low-medium"}
+  ],
+
+  "named_people": {
+    "Camila Ferreira": "girlfriend, 30, Argentinean-Brazilian architect at Foster + Partners CDMX, lives with Seb",
+    "Nube": "Australian Cattle Dog (blue heeler), female, adopted month 6, anxiety about thunder",
+    "Isabela Castellanos": "Seb's mom, 62, retired pediatric nurse, lives Guadalajara, cancer scare month 10 (benign)",
+    "Hugo Río": "Seb's dad, 66, retired physics teacher, mild angina, chess player, lives Guadalajara",
+    "Mateo Río Castellanos": "Seb's brother, 28, software designer in Tijuana, engaged month 13 to Sofía Aguirre",
+    "Sofía Aguirre": "brother Mateo's fiancée, dental hygienist in Tijuana",
+    "Pablo Mendoza": "best friend, mechanical engineer, kickboxing partner at Atlas Box",
+    "Coach Esteban 'Profe' Domínguez": "kickboxing coach at Atlas Box, 61, ex-pro from Tijuana",
+    "Beatriz Ferreira": "Camila's mother, died month 0 of arc — pancreatic cancer, São Paulo",
+    "Hugo Ferreira (sr)": "Camila's father, 70 at month 17, retired civil engineer, lives São Paulo, visits monthly post-widowhood",
+    "Daniela Otero": "former engineering manager at Brújula, leaves month 8, wrote MIT rec letter",
+    "Roberto Sánchez": "current engineering manager (replaced Daniela month 8) — political, micromanages",
+    "Andrés Ruiz": "junior on RouteOpt team, joined month 9, eager",
+    "Carla Vela": "senior on RouteOpt team, on parental leave months 11-15",
+    "Doña Marta": "upstairs neighbor in Roma Norte, bakes bread 5am",
+    "Mama Lupita": "deceased maternal grandmother, died 2019, gave Seb the bombilla mate cup",
+    "Dr. Patricia Lozano": "ITESM thesis advisor (2014), wrote MIT rec letter"
+  },
+
+  "communication_style_with_ai": {
+    "register": "casual, often fragments, no honorifics",
+    "code_pasting": "frequent — pastes errors and stack traces verbatim",
+    "language_mixing": "occasional Spanish words ('órale', 'no manches', 'qué onda', 'chingón')",
+    "no_greetings": "rarely says 'hi' or 'thanks'",
+    "venting_pattern": "long when frustrated, short when buzzing on caffeine",
+    "self_aware": "occasionally apologizes for venting then redirects ('anyway sorry — back to the question')",
+    "callback_pattern": "naturally references prior topics ('that postgres thing I mentioned', 'remember the rust migration')",
+    "no_meta_commentary": "never says 'as you know' or 'just for context — I'm a Mexican backend engineer'; facts come out organically through situation",
+    "occasional_drunk_or_3am_msg": "rare but exists — typos increase, more emotional"
+  }
+}

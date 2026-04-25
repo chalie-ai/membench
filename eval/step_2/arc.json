@@ -1,0 +1,405 @@
+{
+  "schema_version": 1,
+  "method_basis": "BEAM-style narrative arc + LongMemEval first-disclosure tagging",
+  "total_turns": 500,
+  "total_beats": 17,
+  "arc_span_weeks": 86,
+  "arc_span_months": 18,
+
+  "stable_traits_disclosable_anywhere": {
+    "comment": "These persona facts may be disclosed organically in any beat. They are NOT first-disclosure-locked to a beat. Agents should sprinkle naturally — not all at once.",
+    "facts": {
+      "name_seb": "speaker's name is Sebastián / 'Seb'",
+      "age_33": "33 years old (was 32 at arc start, turns 33 in beat 7)",
+      "lives_cdmx_roma_norte": "lives in Mexico City, Roma Norte neighborhood",
+      "from_guadalajara": "originally from Guadalajara, Jalisco",
+      "moved_to_cdmx_2yr": "moved to CDMX 2 years before arc start",
+      "occupation_senior_backend": "senior backend engineer",
+      "employer_brujula": "works at Brújula Logistics, Series B last-mile delivery startup, ~120 employees",
+      "team_logistics_platform": "on the Logistics Platform team, 6 backend engineers",
+      "education_itesm_2014": "graduated ITESM (Tec de Monterrey) Guadalajara 2014, BSc CS",
+      "vegetarian_4_years": "vegetarian for 4 years",
+      "vegetarian_trigger_dad_surgery": "became vegetarian after watching dad's cardiac bypass in 2022",
+      "kickbox_atlas_box": "kickboxes at Atlas Box CDMX in Colonia Juárez, Mon/Wed/Fri",
+      "yerba_mate_habit": "drinks 4-6 cups yerba mate per day",
+      "bombilla_from_abuela": "drinks from bombilla cup gifted by maternal grandmother Mama Lupita in 2017, engraved 'Seb'",
+      "abuela_lupita_died_2019": "Mama Lupita died 2019",
+      "languages_spanish_english_portuguese": "speaks Spanish (native), English (fluent), learning Portuguese (B1, for Camila's family)",
+      "camila_5yr_relationship": "5-year relationship with Camila Ferreira, Argentinean-Brazilian architect, age 30",
+      "camila_foster_partners": "Camila works at Foster + Partners CDMX office",
+      "met_camila_oaxaca_wedding": "met Camila at a friend's wedding in Oaxaca, late 2021",
+      "honda_crv_la_torta": "drives 2018 Honda CR-V silver, nicknamed 'La Torta'",
+      "vinyl_collection_150": "owns ~150 vinyl records, Latin jazz heavy",
+      "thinkpad_t480_nixos": "personal laptop is ThinkPad T480 running NixOS",
+      "macbook_pro_m2_work": "work laptop is MacBook Pro M2 16in",
+      "iphone_resentful": "uses iPhone 15 Pro, was Pixel before, resentful",
+      "garmin_265": "Garmin Forerunner 265 watch",
+      "mom_isabela_retired_nurse": "mom Isabela Castellanos, 62, retired pediatric nurse, lives Guadalajara",
+      "dad_hugo_retired_teacher": "dad Hugo Río, 66, retired physics teacher, lives Guadalajara",
+      "dad_triple_bypass_2022": "dad had triple bypass surgery 2022",
+      "dad_plays_chess": "dad is avid chess player",
+      "brother_mateo_28_designer": "brother Mateo, 28, software designer in Tijuana",
+      "best_friend_pablo": "best friend Pablo Mendoza, mechanical engineer, kickboxing partner",
+      "coach_profe_esteban": "kickboxing coach Esteban 'Profe' Domínguez, 61, ex-pro from Tijuana",
+      "first_job_kueski_2014_2017": "first job at Kueski (fintech) 2014-2017",
+      "second_job_wizeline_2017_2021": "Wizeline 2017-2021, USA banking projects",
+      "joined_brujula_late_2023": "joined Brújula Logistics late 2023",
+      "ramen_at_nudo": "ramen obsession at 'Nudo' on Av. Álvaro Obregón",
+      "cilantro_soap_gene": "can't stand cilantro — soap gene",
+      "hot_sauce_hobby": "makes homemade hot sauces",
+      "f1_perez_fan": "long-suffering Sergio Pérez F1 fan",
+      "reading_chiang_exhalation": "currently reading Ted Chiang's Exhalation",
+      "borges_before_chiang": "was reading Borges before Chiang",
+      "doña_marta_bread_5am": "upstairs neighbor Doña Marta bakes bread at 5am",
+      "la_polar_cantina_below": "cantina 'La Polar' below the apartment, Friday noise",
+      "café_cardinal_remote": "favorite café 'Cardinal' for working remote",
+      "lapsed_catholic": "lapsed Catholic, lights candles for Mama Lupita on her birthday",
+      "no_smoking": "doesn't smoke",
+      "moderate_drinker": "drinks mezcal/wine moderately, 1-2x per week",
+      "yamaha_fg800_guitar": "owns Yamaha FG800 acoustic guitar, rarely plays",
+      "fairtex_shin_guards": "Fairtex red shin guards",
+      "twins_special_gloves": "Twins Special 14oz gloves",
+      "mastodon_user": "uses Mastodon, hates Twitter/X",
+      "salary_95k_usd": "earns ~95k USD eq, 1.7M MXN/yr",
+      "savings_45k_usd": "has ~45k USD saved in CETES + USD index",
+      "student_loan_8k": "8k USD remaining on ITESM student loan"
+    }
+  },
+
+  "beats": [
+    {
+      "id": 1,
+      "turn_range": [1, 30],
+      "weeks": [1, 3],
+      "months_label": "month 0 (early)",
+      "title": "Mother-in-law's funeral in São Paulo",
+      "summary": "Beatriz Ferreira, Camila's mother, dies of pancreatic cancer. Seb and Camila fly to São Paulo for the funeral. Numb week — logistics of grief, jet-lagged, vegetarian in churrasco country, Camila inconsolable. Hugo Ferreira sr (Camila's dad) suddenly widowed at 68.",
+      "mood": "shock, exhaustion, tender grief, secondary survivor's guilt",
+      "first_disclosures": {
+        "mother_in_law_died": "Beatriz Ferreira, Camila's mom, dies of pancreatic cancer",
+        "funeral_sao_paulo": "funeral in São Paulo",
+        "hugo_widowed_68": "Camila's dad Hugo Ferreira sr widowed at 68",
+        "camila_bereavement_leave": "Camila on bereavement leave",
+        "vegetarian_in_churrasco_country": "navigating vegetarianism at Brazilian churrasco wakes",
+        "hugo_will_visit_monthly": "Hugo sr starts visiting monthly post-funeral",
+        "relocation_briefly_considered": "brief talk: Camila moving back to São Paulo, rejected"
+      },
+      "callback_threads": [],
+      "category_distribution_hint": "high emotion, low project — emotion/relationship/family-grief turns dominate"
+    },
+    {
+      "id": 2,
+      "turn_range": [31, 55],
+      "weeks": [4, 7],
+      "months_label": "month 1 (mid)",
+      "title": "Return to CDMX, numbness, promo cycle starts",
+      "summary": "Back in CDMX. Camila on bereavement leave. Seb returns to work, Daniela mentions end-of-year promo cycle is open and she's putting Seb up for Senior. Awkward to be excited while girlfriend grieves. RouteOpt service Python/Django mentioned as slow.",
+      "mood": "muted, distracted, slowly re-engaging",
+      "first_disclosures": {
+        "promo_brewing_senior": "end-of-year promo cycle, Seb up for Senior",
+        "manager_daniela_otero": "manager Daniela Otero putting Seb up",
+        "routeopt_python_django_slow": "RouteOpt service is currently Python/Django, slow",
+        "camila_back_to_work_partial": "Camila returning part-time to Foster + Partners"
+      },
+      "callback_threads": ["mother_in_law_died", "camila_bereavement_leave"],
+      "category_distribution_hint": "work/career returns, grief recedes but lingers"
+    },
+    {
+      "id": 3,
+      "turn_range": [56, 85],
+      "weeks": [8, 12],
+      "months_label": "months 2-3",
+      "title": "Promo passed, espresso machine, pose-estimation side project starts",
+      "summary": "Promo lands month 2 — 18% bump. Awkward joy. Seb buys Lelit Mara X espresso machine month 3 as guilt-tinged celebration. Month 4 starts kickboxing form-analysis side project, initially with TensorFlow.",
+      "mood": "cautiously upbeat, building momentum, nerdy excitement about side project",
+      "first_disclosures": {
+        "promo_passed_18pct_bump": "promoted Mid → Senior, 18% salary bump",
+        "lelit_mara_x_purchase": "bought Lelit Mara X espresso machine, ~30k MXN",
+        "pose_estimation_project_started": "starts pose-estimation app for kickboxing form analysis",
+        "tensorflow_initial_choice": "initial stack: TensorFlow",
+        "pablo_test_user_for_pose": "Pablo will test pose-est on his sparring video"
+      },
+      "callback_threads": ["promo_brewing_senior", "manager_daniela_otero", "kickbox_atlas_box"],
+      "category_distribution_hint": "career win, hobby/side-project, occasional grief callback"
+    },
+    {
+      "id": 4,
+      "turn_range": [86, 115],
+      "weeks": [13, 19],
+      "months_label": "month 4",
+      "title": "Pose-est ramping, TensorFlow → MediaPipe pivot, dad health flare",
+      "summary": "Pose-est project: TensorFlow too slow on CPU, pivots to MediaPipe. Dad has minor angina episode, doctor adjusts statin dose. Seb reflects on regret of not visiting abuela Lupita before her 2019 death.",
+      "mood": "engaged, tinged with familial worry",
+      "first_disclosures": {
+        "tensorflow_pivot_to_mediapipe": "pivoting from TensorFlow to MediaPipe Pose for speed",
+        "dad_angina_episode": "dad Hugo had a minor angina episode month 4, statin dose adjusted",
+        "abuela_lupita_regret_unvisited": "regrets not visiting abuela Lupita in her last year before 2019 death",
+        "yoga_camila_resentful": "Camila makes Seb do Sunday yoga, he resents it"
+      },
+      "callback_threads": ["pose_estimation_project_started", "tensorflow_initial_choice", "abuela_lupita_died_2019", "dad_triple_bypass_2022"],
+      "category_distribution_hint": "technical-pivot heavy, family worry sprinkled"
+    },
+    {
+      "id": 5,
+      "turn_range": [116, 145],
+      "weeks": [20, 26],
+      "months_label": "months 5-6",
+      "title": "Postgres prod outage, post-mortem, rust migration kickoff, Nube adopted",
+      "summary": "Month 5: 4-hour Postgres prod outage on RouteOpt. Seb writes the post-mortem. Catalyst for rust migration: month 6 kicks off RouteOpt rust rewrite, Seb is tech lead. Same week, Seb and Camila adopt Nube from Hocicos Felices rescue.",
+      "mood": "stressful then resolute, then warm (dog)",
+      "first_disclosures": {
+        "pg_outage_4hr_month5": "4-hour Postgres prod outage month 5",
+        "post_mortem_authored": "Seb wrote the post-mortem doc",
+        "routeopt_rust_kickoff": "month 6 kicks off RouteOpt rust migration",
+        "rust_axum_tokio_sqlx": "stack: Rust + Axum + Tokio + sqlx",
+        "seb_tech_lead": "Seb is tech lead on the rust migration",
+        "postgis_blocker_initial": "initial blocker: tokio-postgres doesn't natively support PostGIS geography type",
+        "nube_adopted_month6": "Nube adopted month 6 from Hocicos Felices rescue",
+        "nube_blue_heeler_female": "Nube is a female blue heeler (Australian Cattle Dog)",
+        "nube_born_feb_2024": "Nube born Feb 2024"
+      },
+      "callback_threads": ["routeopt_python_django_slow", "kickbox_atlas_box", "promo_passed_18pct_bump"],
+      "category_distribution_hint": "incident pain heavy, tech shift heavy, dog warmth at end"
+    },
+    {
+      "id": 6,
+      "turn_range": [146, 175],
+      "weeks": [27, 31],
+      "months_label": "month 7",
+      "title": "Rust early hurdles, Nube settling in, kid-timing tension with Camila",
+      "summary": "Rust migration: writing custom PostGIS encoder for tokio-postgres. Nube is settling, has separation anxiety. Camila brings up kid-timing — she wants to start trying within 2 years; Seb panics a bit. They start couples therapy.",
+      "mood": "technical grind + relationship strain",
+      "first_disclosures": {
+        "postgis_custom_encoder_solution": "wrote custom PostGIS geography encoder for tokio-postgres",
+        "nube_separation_anxiety": "Nube has separation anxiety",
+        "kid_timing_camila_wants_2yr": "Camila wants to try for kids within 2 years",
+        "couples_therapy_started_month7": "couples therapy started month 7",
+        "therapist_dr_munoz": "therapist is Dr. Carmen Muñoz in Condesa",
+        "portuguese_b1_progress": "Portuguese now at solid B1 — Camila's family WhatsApps in Portuguese"
+      },
+      "callback_threads": ["routeopt_rust_kickoff", "postgis_blocker_initial", "nube_adopted_month6", "camila_5yr_relationship"],
+      "category_distribution_hint": "technical detail + relationship vulnerability"
+    },
+    {
+      "id": 7,
+      "turn_range": [176, 205],
+      "weeks": [32, 36],
+      "months_label": "month 8",
+      "title": "Brown belt, Daniela's exit, Seb's birthday",
+      "summary": "Brown belt earned at Atlas Box mid-month, after 6-belt-grade test. Daniela Otero announces she's leaving Brújula for a Series A startup; Roberto Sánchez announced as replacement. Seb turns 33 (June 4). 3 sessions of couples therapy then they pause.",
+      "mood": "personal high, professional anxiety, transitions",
+      "first_disclosures": {
+        "brown_belt_earned_month8": "brown belt earned at Atlas Box month 8",
+        "daniela_leaves_brujula": "Daniela Otero leaves Brújula for a Series A startup",
+        "roberto_sanchez_announced": "Roberto Sánchez announced as new manager",
+        "birthday_turns_33": "Seb's 33rd birthday (June 4) — quiet dinner",
+        "couples_therapy_3_sessions_paused": "couples therapy: 3 sessions, then paused"
+      },
+      "callback_threads": ["manager_daniela_otero", "kickbox_atlas_box", "kid_timing_camila_wants_2yr", "couples_therapy_started_month7"],
+      "category_distribution_hint": "kickboxing achievement, work-political transition, birthday low-key"
+    },
+    {
+      "id": 8,
+      "turn_range": [206, 230],
+      "weeks": [37, 40],
+      "months_label": "month 9",
+      "title": "Rent shock, Roberto starts, La Polar Friday noise",
+      "summary": "Landlord raises Roma Norte rent 28k → 33k MXN (18%). Argument about hot water. Roberto Sánchez starts as manager — already micro-managing standup. La Polar cantina noise reaches new heights on Fridays.",
+      "mood": "irritated, micro-aggressed, urban CDMX living friction",
+      "first_disclosures": {
+        "rent_increase_28_33k": "rent increased from 28k MXN to 33k MXN",
+        "rent_increase_argument_hot_water": "argued with landlord about hot water during the rent renegotiation",
+        "roberto_starts_micromanages": "Roberto Sánchez starts; micromanages stand-ups",
+        "la_polar_friday_noise_complaint": "La Polar cantina Friday noise reaching peak"
+      },
+      "callback_threads": ["roberto_sanchez_announced", "doña_marta_bread_5am", "la_polar_cantina_below"],
+      "category_distribution_hint": "domestic friction, work-political friction"
+    },
+    {
+      "id": 9,
+      "turn_range": [231, 265],
+      "weeks": [41, 46],
+      "months_label": "month 10",
+      "title": "Mom's lump scare, Guadalajara emergency trip, back tweak",
+      "summary": "Mom Isabela calls about a lump on her neck. CT scan scheduled. Seb flies to Guadalajara, anxiety peaks, takes 1 week off. Same week tweaks lower back during sparring — Profe Esteban makes him sit out a Wednesday.",
+      "mood": "high stakes worry, family closeness, body breaking down",
+      "first_disclosures": {
+        "mom_lump_neck": "mom Isabela found a lump on her neck",
+        "mom_ct_scan_scheduled": "CT scan scheduled, awaiting results",
+        "seb_flies_guadalajara_1wk": "Seb flies to Guadalajara, takes 1 week off",
+        "back_tweak_sparring_month10": "tweaked lower back during sparring at Atlas Box",
+        "profe_makes_sit_out_wed": "Profe Esteban makes him sit out a Wednesday class"
+      },
+      "callback_threads": ["mom_isabela_retired_nurse", "from_guadalajara", "kickbox_atlas_box", "coach_profe_esteban"],
+      "category_distribution_hint": "family crisis dominant, body pain emergent"
+    },
+    {
+      "id": 10,
+      "turn_range": [266, 295],
+      "weeks": [47, 51],
+      "months_label": "month 11",
+      "title": "Mom's lipoma — benign, pose-est paused, Camila's Pritzker nomination",
+      "summary": "Mom's lump is a lipoma — benign. Profound relief. Seb pauses pose-est side project to focus on rust + recover. Starts physical therapy at Clínica Querétaro for back. Camila's firm gets her nominated for Pritzker Prize student-mentor recognition. Industry buzz.",
+      "mood": "relief, refocus, partner's professional high",
+      "first_disclosures": {
+        "mom_lipoma_benign": "mom's lump is benign — lipoma",
+        "pose_est_paused_month11": "pose-estimation side project paused indefinitely",
+        "back_pt_clinic_queretaro": "back physical therapy at Clínica Querétaro started",
+        "camila_pritzker_nomination": "Camila nominated for Pritzker Prize student-mentor recognition through her firm",
+        "rust_blocker_memory_regression": "rust migration hits memory regression — Tokio task spawning leak suspected"
+      },
+      "callback_threads": ["mom_lump_neck", "mom_ct_scan_scheduled", "pose_estimation_project_started", "back_tweak_sparring_month10", "camila_foster_partners"],
+      "category_distribution_hint": "relief afterglow, technical regression, partner success"
+    },
+    {
+      "id": 11,
+      "turn_range": [296, 325],
+      "weeks": [52, 56],
+      "months_label": "month 12-13",
+      "title": "Bogotá transfer declined, brother engaged, Nube thunder panic",
+      "summary": "Brújula offers Seb a transfer to Bogotá office to lead infra there. He declines — Camila's career, Nube. Brother Mateo announces engagement to Sofía Aguirre, dental hygienist. Trip to Tijuana planned. Nube starts panic attacks during the season's first thunderstorms. Vet prescribes trazodone.",
+      "mood": "strategic life choices, family widening, dog distress",
+      "first_disclosures": {
+        "bogota_transfer_offered": "Brújula offers Bogotá office transfer to lead infra",
+        "bogota_transfer_declined": "Seb declines",
+        "mateo_engaged_sofia": "Mateo engaged to Sofía Aguirre, dental hygienist in Tijuana",
+        "tijuana_trip_planned_for_engagement": "Tijuana trip planned to celebrate",
+        "nube_thunder_panic_first": "Nube has first thunder panic attack",
+        "nube_trazodone_prescribed": "vet prescribes trazodone for storms",
+        "thunder_shirt_tried": "thunder shirt tried, mild help"
+      },
+      "callback_threads": ["nube_separation_anxiety", "brother_mateo_28_designer", "camila_pritzker_nomination"],
+      "category_distribution_hint": "career fork, family expansion, pet distress"
+    },
+    {
+      "id": 12,
+      "turn_range": [326, 355],
+      "weeks": [57, 62],
+      "months_label": "month 14",
+      "title": "Chess board woodworking starts, Festool router, back PT progressing",
+      "summary": "Seb plans cedar chess board for Camila's dad Hugo Ferreira sr's 70th birthday (3 months away). Buys Festool TS 55 REQ plunge router and Veritas chisels. Drives to Maderería El Roble in Toluca for cedar planks. First-time woodworker, makes mistakes — wrong grain orientation, has to re-plane. Back PT helping ~50%.",
+      "mood": "creative, beginner's-mind humility, body slowly improving",
+      "first_disclosures": {
+        "chess_board_project_kickoff": "cedar chess board for Hugo Ferreira sr's 70th",
+        "festool_router_purchased": "bought Festool TS 55 REQ plunge router",
+        "veritas_chisels_purchased": "Veritas chisel set acquired",
+        "madereria_el_roble_toluca_trip": "drove to Maderería El Roble in Toluca for cedar planks",
+        "wrong_grain_oriented_replane": "first attempt: wrong grain orientation, had to re-plane",
+        "back_pt_50pct_helping": "back PT roughly 50% helping",
+        "first_time_woodworker": "first-time woodworker — beginner mistakes"
+      },
+      "callback_threads": ["hugo_widowed_68", "back_tweak_sparring_month10", "back_pt_clinic_queretaro"],
+      "category_distribution_hint": "new hobby, project-management of woodworking, body recovery"
+    },
+    {
+      "id": 13,
+      "turn_range": [356, 385],
+      "weeks": [63, 67],
+      "months_label": "month 15 (early)",
+      "title": "Rust late-stage runtime starvation, black belt prep, insomnia surfaces",
+      "summary": "Rust migration: load test reveals Tokio runtime starvation under burst load. Seb bumps to multi-thread runtime — fixes it. Black belt prep intensifies — extra Saturday classes. Insomnia begins — wakes at 3am, mind churning. Tries melatonin, helps a bit. Tries CBT-I app, doesn't stick.",
+      "mood": "technical perfectionism, athletic grind, sleep collapsing",
+      "first_disclosures": {
+        "tokio_runtime_starvation_burst": "Tokio runtime starvation under burst load discovered in load test",
+        "multi_thread_runtime_fix": "bumped to multi-thread runtime — fixed",
+        "black_belt_prep_extra_saturdays": "extra Saturday black-belt prep classes at Atlas Box",
+        "insomnia_3am_wake": "insomnia: wakes at 3am, mind racing",
+        "melatonin_partial_help": "melatonin tried, helps a bit",
+        "cbt_i_app_didnt_stick": "CBT-I app tried, didn't stick",
+        "carla_vela_back_from_leave": "Carla Vela back from parental leave on RouteOpt team"
+      },
+      "callback_threads": ["routeopt_rust_kickoff", "rust_blocker_memory_regression", "kickbox_atlas_box", "brown_belt_earned_month8"],
+      "category_distribution_hint": "tech triumph, athletic prep, sleep collapse"
+    },
+    {
+      "id": 14,
+      "turn_range": [386, 415],
+      "weeks": [68, 72],
+      "months_label": "month 15 (mid-late)",
+      "title": "Black belt awarded, family flies in",
+      "summary": "Black belt — first dan — earned at Atlas Box. Profe Esteban hands belt personally. Pablo records on phone. Mom Isabela and dad Hugo fly in from Guadalajara, see Seb test. Brother Mateo flies from Tijuana with Sofía. Camila throws small party. Seb's lifelong-dream moment.",
+      "mood": "peak life happiness, family pride, exhaustion",
+      "first_disclosures": {
+        "black_belt_earned_month15": "black belt — first dan — earned at Atlas Box",
+        "profe_hands_belt_personally": "Profe Esteban hands belt personally on the mat",
+        "pablo_records_phone_video": "Pablo records the moment on phone",
+        "family_flies_in_for_belt": "mom, dad, brother, Sofía all fly in for the test",
+        "camila_throws_small_party": "Camila organizes a small party at apartment after"
+      },
+      "callback_threads": ["brown_belt_earned_month8", "best_friend_pablo", "coach_profe_esteban", "mateo_engaged_sofia", "mom_isabela_retired_nurse", "dad_hugo_retired_teacher"],
+      "category_distribution_hint": "lifetime achievement, family closeness — short triumphant turns + one long reflective turn"
+    },
+    {
+      "id": 15,
+      "turn_range": [416, 445],
+      "weeks": [73, 77],
+      "months_label": "month 16",
+      "title": "Rust ships staging, chess board warps, MIT brewing",
+      "summary": "Month 16: RouteOpt rust ships to staging. Metrics: Python 340ms p95 → Rust 38ms p95. Chess board: warping in one corner from CDMX humidity, has to re-glue and clamp. Insomnia hits worst point — 4-5 hours of sleep average. Seb starts thinking about MIT Media Lab masters.",
+      "mood": "professional triumph, hands-on frustration, sleep-deprived rumination",
+      "first_disclosures": {
+        "routeopt_ships_staging_month16": "RouteOpt rust shipped to staging",
+        "rust_p95_metric_340_to_38": "Python 340ms p95 → Rust 38ms p95",
+        "chess_board_warping_corner": "chess board has warping in one corner from CDMX humidity",
+        "chess_board_reglue_clamp": "re-glue and clamp the warp",
+        "insomnia_4_to_5_hours": "insomnia at peak — 4-5 hours sleep avg",
+        "mit_media_lab_brewing": "starts thinking seriously about MIT Media Lab masters",
+        "rosalind_picard_target_advisor": "thinking of Rosalind Picard as target advisor"
+      },
+      "callback_threads": ["routeopt_rust_kickoff", "tokio_runtime_starvation_burst", "chess_board_project_kickoff", "wrong_grain_oriented_replane", "insomnia_3am_wake", "pose_estimation_project_started"],
+      "category_distribution_hint": "tech ship-day rush, woodworking frustration, sleep dread, future dreams"
+    },
+    {
+      "id": 16,
+      "turn_range": [446, 470],
+      "weeks": [78, 80],
+      "months_label": "month 17",
+      "title": "Chess board complete, Hugo's 70th party, MIT app drafted",
+      "summary": "Chess board finished — beeswax-finished cedar with magnetic walnut pieces. Gifted at Hugo Ferreira sr's 70th party in CDMX (Hugo flew in from São Paulo). Hugo cries. MIT Media Lab masters app drafted — personal statement theme: ML for nonverbal feedback in physical training.",
+      "mood": "deeply tender, creative satisfaction, intellectual ambition",
+      "first_disclosures": {
+        "chess_board_complete_beeswax": "chess board finished with beeswax finish, magnetic walnut pieces",
+        "chess_board_3500_mxn_materials": "materials cost ~3500 MXN total",
+        "hugo_70th_party_cdmx": "Hugo's 70th party held in CDMX",
+        "hugo_cries_at_gift": "Hugo cries upon receiving",
+        "mit_app_drafted_month17": "MIT app drafted",
+        "personal_statement_theme_ml_physical": "personal statement theme: ML for nonverbal feedback in physical training",
+        "gre_waiver_granted": "GRE waiver granted"
+      },
+      "callback_threads": ["chess_board_project_kickoff", "chess_board_warping_corner", "hugo_widowed_68", "pose_estimation_project_started", "mit_media_lab_brewing", "rosalind_picard_target_advisor"],
+      "category_distribution_hint": "emotional gift moment, MIT app planning"
+    },
+    {
+      "id": 17,
+      "turn_range": [471, 500],
+      "weeks": [81, 86],
+      "months_label": "month 18 (now)",
+      "title": "MIT app submitted, future rumination, decompression",
+      "summary": "Month 18 (now): MIT app submitted. Recommendation letters from Daniela Otero (former mgr), Dr. Patricia Lozano (ITESM thesis advisor), Pablo Mendoza (peer wildcard). 7 drafts of personal statement. Awaiting decision. Seb in decompression mode — back pain plateau, insomnia easing, considering future of career: stay backend or pivot to research.",
+      "mood": "reflective, drained, hopeful, slightly philosophical",
+      "first_disclosures": {
+        "mit_app_submitted_month18": "MIT app submitted",
+        "rec_letter_daniela_otero": "rec letter from Daniela Otero (former mgr)",
+        "rec_letter_lozano_itesm": "rec letter from Dr. Patricia Lozano (ITESM thesis advisor)",
+        "rec_letter_pablo_wildcard": "rec letter from Pablo Mendoza (peer wildcard)",
+        "personal_statement_7_drafts": "7 drafts of personal statement",
+        "career_pivot_research_rumination": "ruminating on career pivot to research"
+      },
+      "callback_threads": ["mit_app_drafted_month17", "personal_statement_theme_ml_physical", "rosalind_picard_target_advisor", "daniela_leaves_brujula", "best_friend_pablo", "education_itesm_2014", "back_pt_50pct_helping", "insomnia_4_to_5_hours"],
+      "category_distribution_hint": "submission, awaiting, identity questions, body recovery"
+    }
+  ],
+
+  "agent_slices": [
+    {"agent": 1,  "turn_range": [1,   50 ], "owns_beats": [1, "2 (partial 31-50)"], "earlier_beats_for_callback": []},
+    {"agent": 2,  "turn_range": [51,  100], "owns_beats": ["2 (partial 51-55)", 3, "4 (partial 86-100)"], "earlier_beats_for_callback": [1]},
+    {"agent": 3,  "turn_range": [101, 150], "owns_beats": ["4 (partial 101-115)", 5, "6 (partial 146-150)"], "earlier_beats_for_callback": [1,2,3]},
+    {"agent": 4,  "turn_range": [151, 200], "owns_beats": ["6 (partial 151-175)", "7 (partial 176-200)"], "earlier_beats_for_callback": [1,2,3,4,5]},
+    {"agent": 5,  "turn_range": [201, 250], "owns_beats": ["7 (partial 201-205)", 8, "9 (partial 231-250)"], "earlier_beats_for_callback": [1,2,3,4,5,6]},
+    {"agent": 6,  "turn_range": [251, 300], "owns_beats": ["9 (partial 251-265)", 10, "11 (partial 296-300)"], "earlier_beats_for_callback": [1,2,3,4,5,6,7,8]},
+    {"agent": 7,  "turn_range": [301, 350], "owns_beats": ["11 (partial 301-325)", "12 (partial 326-350)"], "earlier_beats_for_callback": [1,2,3,4,5,6,7,8,9,10]},
+    {"agent": 8,  "turn_range": [351, 400], "owns_beats": ["12 (partial 351-355)", 13, "14 (partial 386-400)"], "earlier_beats_for_callback": [1,2,3,4,5,6,7,8,9,10,11]},
+    {"agent": 9,  "turn_range": [401, 450], "owns_beats": ["14 (partial 401-415)", 15, "16 (partial 446-450)"], "earlier_beats_for_callback": [1,2,3,4,5,6,7,8,9,10,11,12,13]},
+    {"agent": 10, "turn_range": [451, 500], "owns_beats": ["16 (partial 451-470)", 17], "earlier_beats_for_callback": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]}
+  ]
+}
